@@ -1,0 +1,38 @@
+
+*** Running vivado
+    with args -log lab1_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1_top.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source lab1_top.tcl -notrace
+Command: synth_design -top lab1_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1127.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab1_top' [C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.srcs/sources_1/new/lab1_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'input_select' [C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.srcs/sources_1/new/input_select.v:3]
+WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.srcs/sources_1/new/input_select.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'input_select' (1#1) [C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.srcs/sources_1/new/input_select.v:3]
+ERROR: [Synth 8-685] variable 'dispA' should not be used in output port connection [C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.srcs/sources_1/new/lab1_top.v:17]
+ERROR: [Synth 8-6156] failed synthesizing module 'lab1_top' [C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.srcs/sources_1/new/lab1_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1127.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 31 12:07:38 2021...
