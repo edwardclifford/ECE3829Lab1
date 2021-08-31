@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Aug 31 12:07:28 2021
-# Process ID: 18872
+# Start of session at: Tue Aug 31 13:17:56 2021
+# Process ID: 21156
 # Current directory: C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.runs/synth_1
 # Command line: vivado.exe -log lab1_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1_top.tcl
 # Log file: C:/Users/t3ddy/VivadoProjects/lab_1/lab_1.runs/synth_1/lab1_top.vds

@@ -9,7 +9,9 @@ module input_select(
     output reg [3:0] dispD
     );
     
-    always @ (mode)
+    reg [7:0] result;
+    
+    always @ (*)
         case (mode)
             2'b00:
                 begin
@@ -27,17 +29,19 @@ module input_select(
                 end
             2'b10:
                 begin
+                    result = (sw[7:4] + sw[3:0]);
                     dispA = sw[7:4];
                     dispB = sw[3:0];
-                    dispC = (sw[7:4] + sw[3:0]) >> 4;
-                    dispD = (sw[7:4] + sw[3:0]);
+                    dispC = result[7:4];
+                    dispD = result[3:0];
                 end
             2'b11:
                 begin
+                    result = (sw[7:4] * sw[3:0]);
                     dispA = sw[7:4];
                     dispB = sw[3:0];
-                    dispC = (sw[7:4] * sw[3:0]) >> 4;
-                    dispD = (sw[7:4] * sw[3:0]);
+                    dispC = result[7:4];
+                    dispD = result[3:0];
                 end
         endcase
 endmodule

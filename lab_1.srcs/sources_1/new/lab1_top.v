@@ -7,10 +7,10 @@ module lab1_top(
         output [3:0] an
     );
     
-    reg [3:0] dispA;
-    reg [3:0] dispB;
-    reg [3:0] dispC;
-    reg [3:0] dispD;
+    wire [3:0] dispA;
+    wire [3:0] dispB;
+    wire [3:0] dispC;
+    wire [3:0] dispD;
     
     input_select input_select_i (sw[15:14],
                                  sw[13:0],
